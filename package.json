@@ -1,12 +1,12 @@
 {
-  "name": "@gasbuddy/appcenter-build-bot",
+  "name": "appcenter-build-bot",
   "version": "1.0.0",
   "description": "A robot to manipulate appcenter builds (mostly to seek to a specific build number and to cancel ranges)",
   "scripts": {
-    "test": "tap --ts",
     "lint": "eslint src",
     "build": "tsc -p tsconfig.json"
   },
+  "bin": "./build/index.js",
   "author": "GasBuddy Developers <develoeprs@gasbuddy.com>",
   "license": "MIT",
   "repository": {
@@ -20,6 +20,8 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.35",
+    "@types/minimist": "^1.2.2",
     "@types/tap": "^15.0.5",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
     "@typescript-eslint/parser": "^5.3.1",
@@ -34,5 +36,8 @@
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "minimist": "^1.2.5"
+  }
 }

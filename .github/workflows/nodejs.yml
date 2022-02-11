@@ -23,7 +23,6 @@ jobs:
         npm install
         npm run lint
         npm run build
-        npm test
       env:
         NPM_TOKEN: ${{secrets.npm_token}}
         CI: true
