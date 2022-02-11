@@ -1,0 +1,38 @@
+{
+  "name": "@gasbuddy/appcenter-build-bot",
+  "version": "1.0.0",
+  "description": "A robot to manipulate appcenter builds (mostly to seek to a specific build number and to cancel ranges)",
+  "scripts": {
+    "test": "tap --ts",
+    "lint": "eslint src",
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "GasBuddy Developers <develoeprs@gasbuddy.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gas-buddy/appcenter-build-bot.git"
+  },
+  "keywords": [
+    "typescript",
+    "gasbuddy"
+  ],
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "devDependencies": {
+    "@types/tap": "^15.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "tap": "^15.0.10",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {}
+}
