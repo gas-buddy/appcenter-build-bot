@@ -41,6 +41,9 @@ async function latestBuild() {
     headers,
     method: 'GET',
   }).then((response) => response.json());
+  if (!Array.isArray(data)) {
+    throw new Error(`Unable to get latest build: \n${JSON.stringify(data, null, 2)}`);
+  }
   return data[0];
 }
 
